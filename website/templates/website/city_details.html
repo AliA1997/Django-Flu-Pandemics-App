@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %} {{city.name}}{% endblock %}
+{% block content %}
+    <div>
+        <div>
+            <p>City: {{city.name}}</p>
+            <p>Country: {{city.country}}</p>
+            <p>Population: {{city.population}} {{city.population_in}}</p>
+        </div>
+    </div>
+{% endblock %}

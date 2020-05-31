@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}History of Flu Pandemics{% endblock %}
+{% block content %}
+    <div>
+        <div>
+            <h2>History of Flu Pandemics</h2>
+            <div>
+                <ul>
+                    <li><a href="{% url 'countries' %}">See Countries</a></li>
+                    <li><a href="{% url 'cities' %}">See Cities</a></li>
+                    <li><a href="{% url 'diseases' %}">See Diseases</a></li>
+                    <li><a href="{% url 'pandemics' %}">See Pandemics</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

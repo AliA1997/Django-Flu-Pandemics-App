@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}List of Cities{% endblock %}
+{% block content %}
+    <div>
+        <div>
+            <h1>List of Cities</h1>
+            <ul>
+                {% for city in cities %}
+                    <li class="card city-card">
+                        <a href="{% url 'city details' city.id %}">{{city.name}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}

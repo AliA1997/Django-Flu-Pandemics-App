@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %} {{disease.name}} {% endblock %}
+{% block content %}
+    <div>
+        <div>
+            <p>Disease: {{disease.name}}</p>
+            <p>Type: {{disease.type}}</p>
+            <p>Average Mortality Rate: {{disease.average_mortality_rate}}%</p>
+        </div>
+    </div>
+{% endblock %}

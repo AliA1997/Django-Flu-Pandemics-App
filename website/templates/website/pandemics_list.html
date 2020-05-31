@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}List of Pandemics{% endblock %}
+{% block content %}
+    <div>
+        <div>
+            <h1>List of Pandemics</h1>
+            <ul>
+                {% for pandemic in pandemics %}
+                    <li class="card pandemic-card">
+                        <a href="{% url 'pandemic details' pandemic.id %}">{{pandemic.name}} {{pandemic.year_from}} - {{pandemic.year_to}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}
